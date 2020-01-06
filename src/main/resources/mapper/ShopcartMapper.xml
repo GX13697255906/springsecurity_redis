@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gx.mapper.ShopcartMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gx.entity.Shopcart">
+        <id column="id" property="id" />
+        <result column="gid" property="gid" />
+        <result column="gname" property="gname" />
+        <result column="gtype" property="gtype" />
+        <result column="price" property="price" />
+        <result column="uid" property="uid" />
+        <result column="num" property="num" />
+        <result column="createtime" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, gid, gname, gtype, price, uid, num, createtime
+    </sql>
+
+</mapper>

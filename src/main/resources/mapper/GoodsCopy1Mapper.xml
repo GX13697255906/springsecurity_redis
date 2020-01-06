@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gx.mapper.GoodsCopy1Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gx.entity.GoodsCopy1">
+        <id column="id" property="id" />
+        <result column="gname" property="gname" />
+        <result column="price" property="price" />
+        <result column="gtype" property="gtype" />
+        <result column="sendtype" property="sendtype" />
+        <result column="gshipper" property="gshipper" />
+        <result column="gsales" property="gsales" />
+        <result column="brandID" property="brandID" />
+        <result column="sizeID" property="sizeID" />
+        <result column="pixelsID" property="pixelsID" />
+        <result column="numcoresID" property="numcoresID" />
+        <result column="networktypeID" property="networktypeID" />
+        <result column="description" property="description" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, gname, price, gtype, sendtype, gshipper, gsales, brandID, sizeID, pixelsID, numcoresID, networktypeID, description
+    </sql>
+
+</mapper>
